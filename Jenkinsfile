@@ -1,4 +1,4 @@
-def registry = 'https://ncpljfrog.jfrog.io'
+def registry = 'https://mettu.jfrog.io'
 pipeline {
     tools {
         maven "Maven3"
@@ -11,7 +11,7 @@ pipeline {
         stages {
             stage ('Checkout from git'){
                 steps {
-                    git branch: 'main', url: 'https://github.com/bkrrajmali/springbootapp.git'
+                    git branch: 'main', url: 'https://github.com//springbootapp.git'
             }
         }
         stage ('Maven Build'){
