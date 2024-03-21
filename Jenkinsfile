@@ -79,10 +79,10 @@ pipeline {
     stage ("Push Image to ECR")  {
         steps {
             script {
-                sh 'aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 037500517393.dkr.ecr.us-east-1.amazonaws.com'
+                sh 'aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 082295751144.dkr.ecr.us-east-1.amazonaws.com'
                 //sh 'docker build -t ncplrepo .'
-                sh 'docker tag myrepo:latest 037500517393.dkr.ecr.us-east-1.amazonaws.com/ncplrepo:latest'
-                sh 'docker push 037500517393.dkr.ecr.us-east-1.amazonaws.com/ncplrepo:latest'
+                sh 'docker tag myrepo:latest 082295751144.dkr.ecr.us-east-1.amazonaws.com/ncplrepo:latest'
+                sh 'docker push 082295751144.dkr.ecr.us-east-1.amazonaws.com/ncplrepo:latest'
 
             }
         }
